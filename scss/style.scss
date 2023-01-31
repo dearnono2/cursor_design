@@ -1,0 +1,31 @@
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  width: 100%; height: 100vh;
+  background: #333; overflow: hidden;
+  display: flex; justify-content: center; align-items: center;
+  // cursor를 none으로 해줘야 마우스 클릭 모양이 사라진다.
+  cursor: none;
+
+  h1 {
+    font: 10vw/1 'arial';
+    color: #fff;
+  }
+}
+.cursor {
+  width: 20px; height: 20px; background: #fff;
+  position: fixed; border-radius: 50%; top: 0; left: 0; z-index: 2;
+  pointer-events: none; transform: translate(-50%, -50%);
+  transition: transform 0.3s;
+  mix-blend-mode: difference;
+}
