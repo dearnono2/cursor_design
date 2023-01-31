@@ -22,6 +22,7 @@ figure {
     color: #fff;
   }
 }
+
 .cursor {
   width: 20px; height: 20px; background: #fff;
   position: fixed; border-radius: 50%; top: 0; left: 0; z-index: 2;
@@ -29,3 +30,4 @@ figure {
   transition: transform 0.3s;
   mix-blend-mode: difference;
 }
+
